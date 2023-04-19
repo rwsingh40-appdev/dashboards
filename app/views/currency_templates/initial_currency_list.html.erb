@@ -1,1 +1,16 @@
-<h1>my currency list page (aka forex page)</h1>
+<h1>Currency pairs</h1>
+
+<div>
+  <p>Go <a href="/">back</a>.</p>
+</div>
+
+<div>
+  <ul>
+  <%@currency_abbreviations_array.each do |a_currency_abbreviation|%>
+    <li>
+      <a href="/forex/<%=a_currency_abbreviation%>">Convert 1 <%=a_currency_abbreviation%> to...</a>
+    </li>
+  <%end%>
+  </ul>
+
+</div>

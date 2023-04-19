@@ -1,1 +1,17 @@
-<h1>my list of taret currencies</h1>
+<h1>Convert <%=@initial_currency%></h1>
+
+<div>
+  <p>Go <a href="/forex">back</a>.</p>
+</div>
+
+
+<div>
+  <ul>
+  <%@currency_abbreviations_array.each do |a_currency_abbreviation|%>
+    <li>
+      <a href="/forex/<%=@initial_currency%>/<%=a_currency_abbreviation%>">Convert 1 <%=@initial_currency%> to <%=a_currency_abbreviation%>...</a>
+    </li>
+  <%end%>
+  </ul>
+
+</div>

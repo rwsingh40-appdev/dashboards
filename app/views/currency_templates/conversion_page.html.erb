@@ -1,1 +1,10 @@
-<h1>my conversion page</h1>
+<h1>Convert <%=@initial_currency%> to <%=@target_currency%></h1>
+
+
+<p>
+  1 <%=@initial_currency%> equals <%=@target_amount%> <%=@target_currency%>.
+</p>
+
+<div>
+  <p>Go <a href="/forex/<%=@initial_currency%>">back</a>.</p>
+</div>
